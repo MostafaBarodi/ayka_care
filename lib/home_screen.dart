@@ -55,8 +55,12 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
+<<<<<<< HEAD
+                final channelName = 'ayka_room1'; // or use token/user id
+=======
                 final channelName =
                     'user_${DateTime.now().millisecondsSinceEpoch}'; // or use token/user id
+>>>>>>> 958bb438fd480427d2ef1f291d33abf9d9d73a4b
                 Navigator.push(
                   context,
                   MaterialPageRoute(
