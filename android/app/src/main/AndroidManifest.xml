@@ -1,8 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
        <uses-permission android:name="android.permission.CAMERA"/>
        <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
 
+=======
+>>>>>>> 958bb438fd480427d2ef1f291d33abf9d9d73a4b
     <application
         android:label="ayka_care"
         android:name="${applicationName}"

@@ -8,7 +8,11 @@ plugins {
 android {
     namespace = "com.example.ayka_care"
     compileSdk = flutter.compileSdkVersion
+<<<<<<< HEAD
     ndkVersion = "27.0.12077973"
+=======
+    ndkVersion = flutter.ndkVersion
+>>>>>>> 958bb438fd480427d2ef1f291d33abf9d9d73a4b
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

@@ -3,8 +3,12 @@ import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 const String appId = '59ee7387057343b7839b04ae7e05ca85';
+<<<<<<< HEAD
 const String token =
     "007eJxTYOid/nxC9qsAodz2m2erXJSqGeLOeRtXmEwvun3xj9/L1jsKDKaWqanmxhbmBqbmxibGSeYWxpZJBiaJqeapBqbJiRamu1/KZjQEMjL8/JTCwsgAgSA+F0NiZXZifFF+fq4hAwMAgBMjig=="; // For testing only
+=======
+const String token = " n"; // For testing only
+>>>>>>> 958bb438fd480427d2ef1f291d33abf9d9d73a4b
 
 class VideoCallScreen extends StatefulWidget {
   final String channelName;
@@ -68,6 +72,7 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
       body: Center(
         child: Stack(
           children: [
+<<<<<<< HEAD
             if (!_isJoined)
               const Center(
                 child: Text(
@@ -82,6 +87,16 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
                   canvas: const VideoCanvas(uid: 0),
                 ),
               ),
+=======
+            _isJoined
+                ? AgoraVideoView(
+                  controller: VideoViewController(
+                    rtcEngine: _engine,
+                    canvas: const VideoCanvas(uid: 0),
+                  ),
+                )
+                : const Center(child: CircularProgressIndicator()),
+>>>>>>> 958bb438fd480427d2ef1f291d33abf9d9d73a4b
             if (_remoteUid != null)
               Align(
                 alignment: Alignment.topLeft,
